@@ -1,0 +1,50 @@
+* {
+  color: rgb(72, 117, 133);
+}
+.container {
+  width: 60%;
+  margin: 40px auto 20px auto;
+  position: relative;
+  padding: 6% 3% 6% 3%;
+  border: 2px solid rgb(72, 117, 133);
+}
+.heading {
+  text-align: center;
+  top: -50px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  width: 200px;
+}
+.border {
+  display: flex;
+}
+.block1 {
+  border-right: 3px solid rgb(72, 117, 133);
+  padding-right: 5%;
+}
+.block2 {
+  padding-left: 10%;
+}
+.cards1,
+ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.cards2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.honors {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.Personal-Interests {
+  margin-top: 20%;
+}
+.contact {
+  margin-top: 20%;
+}
