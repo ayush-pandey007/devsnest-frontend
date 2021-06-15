@@ -2,11 +2,11 @@
 // Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 // Sample Output : a ( 5 times )
 function freq(params){
-    var x=0;
-    var y=0;
-    var count=0;
-    var max=0;
-    var ans;
+   let x=0;
+   let y=0;
+   let count=0;
+   let max=0;
+   let ans;
     params.sort();
     while(x!=params.length){
         if(params[x]==params[y] && y!=params.length){
