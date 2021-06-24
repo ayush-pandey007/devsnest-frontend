@@ -4,6 +4,7 @@ let rs = document.querySelector(".remaningseats > span");
 let bookedseats = 0;
 let remaningseats = 100;
 balcony.addEventListener("click", (e) => {
+  if (e.target === balcony) return;
   let color = e.target.style.backgroundColor;
   if (color === "") {
     color = "red";
