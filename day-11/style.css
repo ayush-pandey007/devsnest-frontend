@@ -1,0 +1,48 @@
+@import "https://fonts.googleapis.com/css?family=Lily+Script+One";
+body {
+  background-color: #6abbff;
+  font-family: cursive;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.question-box {
+  height: auto;
+  width: 50%;
+  background-color: #212843;
+  padding: 1%;
+  border-radius: 30px;
+  justify-content: space-between;
+  display: flex;
+  /* flex-direction: column; */
+}
+.questions {
+  width: 50%;
+  color: white;
+}
+
+.options {
+  border: solid 4px #161616;
+  align-items: center;
+  border-radius: 100px;
+  color: white;
+  display: flex;
+  padding: 5%;
+  cursor: pointer;
+}
+.option-box {
+  display: grid;
+  grid-gap: 30px;
+
+  justify-content: end;
+  width: 30%;
+  grid-template-columns: 1000fr;
+}
+.score {
+  position: absolute;
+  z-index: -1;
+}
