@@ -1,0 +1,26 @@
+.card-container {
+  width: 260px;
+  overflow: hidden;
+  box-shadow: 0px 0px 15px 0px;
+}
+.card-container:hover {
+  transform: scale(1.02);
+  transition: 0.1s;
+  /* animation: ease-in; */
+  animation: ease-in-out;
+  box-shadow: 0px 0px 15px 0px;
+}
+.image-container img {
+  overflow: hidden;
+  height: 200px;
+}
+.btn button {
+  padding: 0.5rem;
+  background-color: white;
+  border: 1px solid black;
+  transition: 0.2s;
+}
+.btn button:hover {
+  background-color: black;
+  color: white;
+}
