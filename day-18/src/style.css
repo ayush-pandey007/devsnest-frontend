@@ -1,0 +1,18 @@
+h1,
+p {
+  font-family: Lato;
+}
+body {
+  display: flex;
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+}
+.board {
+  height: 200px;
+  width: 200px;
+  background-color: blueviolet;
+  border: 1rem solid black;
+  box-sizing: content-box;
+  box-shadow: 1px 1px 3px black;
+}
