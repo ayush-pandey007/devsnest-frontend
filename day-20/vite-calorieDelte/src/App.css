@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.heading {
+  /* position: absolute; */
+  z-index: -1;
+}

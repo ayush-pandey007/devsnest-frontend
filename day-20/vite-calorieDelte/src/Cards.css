@@ -1,0 +1,7 @@
+.cards {
+  height: 400px;
+  min-width: 450px;
+  padding: 20px;
+  box-shadow: 2px 0px 22px 0px rgba(0, 0, 0, 0.76);
+  overflow-y: scroll;
+}
