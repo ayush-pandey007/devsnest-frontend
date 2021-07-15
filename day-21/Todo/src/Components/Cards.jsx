@@ -26,7 +26,13 @@ function Cards({ food, cal, idx, index, handleDelete, handeleEdit }) {
                 }
               />
             </div>
-            <button className="edit" onClick={() => handleDelete(index)}>
+            <button
+              className="edit"
+              onClick={() => {
+                handleDelete(index);
+                setEdit(false);
+              }}
+            >
               Delete
             </button>
             <button
