@@ -1,0 +1,35 @@
+.card,
+.card2 {
+  width: 40%;
+  height: 200px;
+  border: red solid 1px;
+}
+.main {
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+.card > button {
+  width: 10%;
+  height: 35px;
+  border-radius: 2px;
+  color: white;
+  border: none;
+  margin: 1%;
+}
+.edit {
+  background-color: blue;
+}
+.del {
+  background-color: #bb2d3b;
+}
+button {
+  width: 10%;
+  height: 35px;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  margin: 1%;
+}

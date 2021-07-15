@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import Card from "./Components/Cards";
-let q1;
-let q2;
+
 function App() {
   const [userInput, setUserInput] = useState({ food: "", cals: "" });
   const [state, setState] = useState([]);
@@ -21,31 +20,41 @@ function App() {
   return (
     <div className="App">
       <form action="">
-        <input
-          type="text"
-          placeholder="Enter item"
-          required
-          onChange={(e) => setUserInput({ ...userInput, food: e.target.value })}
-        />
-        <input
-          type="number"
-          placeholder="enter calories"
-          required
-          onChange={(e) => setUserInput({ ...userInput, cals: e.target.value })}
-        />
-        <button
-          onClick={(e) => {
-            e.preventDefault();
-            console.log(userInput);
-            setState([
-              ...state,
-              { food: userInput.food, cals: userInput.cals },
-            ]);
-            setUserInput({ item: "", calorie: "" });
-          }}
-        >
-          Add items
-        </button>
+        <div className="input-field">
+          <input
+            type="text"
+            placeholder="Enter item"
+            required
+            onChange={(e) =>
+              setUserInput({ ...userInput, food: e.target.value })
+            }
+            value={userInput.food}
+          />
+          <input
+            type="number"
+            placeholder="enter calories"
+            required
+            onChange={(e) =>
+              setUserInput({ ...userInput, cals: e.target.value })
+            }
+            value={userInput.cals}
+          />
+        </div>
+        <div className="btn">
+          <button
+            onClick={(e) => {
+              e.preventDefault();
+              console.log(userInput);
+              setState([
+                ...state,
+                { food: userInput.food, cals: userInput.cals },
+              ]);
+              setUserInput({ food: "", cals: "" });
+            }}
+          >
+            Add items
+          </button>
+        </div>
       </form>
       <div className="cards">
         {state.map((val, idx) => (
