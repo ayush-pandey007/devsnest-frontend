@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { addItem, removeItem } from "../action/action";
+import { addItem, removeItem, loadTodo } from "../action/action";
 function Input() {
   const [userInput, setUserInput] = useState("");
   const dispatch = useDispatch();
@@ -24,7 +24,7 @@ function Input() {
         />
         <button type="submit">Add Item</button>
       </form>
-      {/* <button onClick={() => dispatch(loadTodo())}>Load Todo</button> */}
+      <button onClick={() => dispatch(loadTodo())}>Load Todo</button>
     </div>
   );
 }
