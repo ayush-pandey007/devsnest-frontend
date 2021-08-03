@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
-import { dataReducer } from "./dataReducer";
 import { cityReducer } from "./cityReducer";
+import { updateReducer } from "./updateReducer";
+import themeReducer from "./themeReducer";
 
 export const rootReducer = combineReducers({
-  data: dataReducer,
   city: cityReducer,
+  fetc: updateReducer,
+  theme: themeReducer,
 });
