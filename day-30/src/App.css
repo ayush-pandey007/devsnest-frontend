@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.card-img > img {
+  height: 200px;
+  width: 100%;
+  object-fit: scale-down;
+}
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  height: 5%;
+  width: 30%;
+  margin: 2px;
+  text-align: center;
+}
+.fetching > h1 {
+  background-color: aqua;
+}
+.App {
+  display: flex;
+  /* background-color: aqua; */
+}
